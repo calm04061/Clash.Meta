@@ -44,7 +44,6 @@ Support resolve ip with a `Proxy Tunnel`.
 
 ```yaml
 proxy-groups:
-
   - name: DNS
     type: url-test
     use:
