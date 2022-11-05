@@ -3,7 +3,7 @@ name: Docker
 on:
   push:
     branches:
-      - Beta
+      - "*"
     tags:
       - "v*"
 env:
@@ -57,5 +57,6 @@ jobs:
             linux/386
             linux/amd64
             linux/arm64/v8
+            linux/arm/v7
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
